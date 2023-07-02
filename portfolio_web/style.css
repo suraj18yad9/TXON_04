@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgba(0,0,0,0.5) ,rgba(0,0,0,0.2)), url(background_portfolio.jpg) fixed;
+}
+.header{
+    position: fixed;
+    top:0 ;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px;
+    background: transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation:slideRight 1s ease forwards ;
+}
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight:500 ;
+    margin-left:35px ;
+    transition: 0.3s; 
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+}
+.navbar a:hover{
+color: #0ef;
+}
+.Home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+   
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home_content{
+    max-width: 600px;
+}
+.home_content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+.home_content h1{
+font-size: 56px;
+font-weight: 700;
+margin: -3px 0;
+
+}
+.home_content p{
+    font-size: 20px;
+
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    align-self: center;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size:20px ;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+
+}
+.home-sci a:hover{
+background: #0ef;
+color: #081b29;
+box-shadow: 0 0 20px #0ef;
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.btn-box:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan , 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+}
+
+@keyframes slideRight {
+    0%{
+        transform:translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0%{
+        transform:translatey(100px);
+        opacity: 0;
+    }
+    100%{
+        transform:translatey(0px);
+        opacity: 1;
+    }
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+   background: var(--second-bg-color);
+    padding-bottom:6rem ;
+}
+.heading{
+    font-size: 5rem;
+    margin-bottom:3rem ;
+    text-align: center;
+}
+span{
+    color: #0ef;
+}
+
+.about-img{
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-img img{
+width: 80%;
+border-radius: 100%;
+border: .2rem solid #0ef; 
+
+}
+ .about1{
+    text-align: center;
+}
+.about1 h3 {
+    font-size: 2.6rem;
+}
+.about1 p {
+
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+.btn-box1{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.btn-box1:hover a{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan , 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+}
+.education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+
+.education-box .education-content {
+    position: relative;
+    padding:2px ;
+}
+.education-content .content{
+    position: relative;
+    padding: 10px;
+    border: .2rem solid #0ef;
+    border-radius: .6rem;
+    margin-bottom: 30px;
+
+}
+
+.contect{
+    max-height: auto;
+    padding-bottom: 2px;
+    
+
+}
+.contect form {
+    max-width: 70rem;
+    margin:  auto;
+    text-align: center;
+    
+}
+.contect form .input-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+}
+.contect form .input-box .input-field {
+position: relative;
+width: 70%;
+margin: 20px 30px;
+}
+
+.contect form .input-box .input-field input,
+.contect form .textarea-field textarea{
+    width: 80%;
+    height: 30%;
+    padding:30px;
+    font-size: 1.6rem;
+    columns: #fffefe;
+    color: white;
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid #0ef;
+
+}
